@@ -26,9 +26,9 @@ class TimerView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
+        children: const [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 100),
+            padding: EdgeInsets.symmetric(vertical: 100),
             child: Center(
               child: TimerText(),
             ),

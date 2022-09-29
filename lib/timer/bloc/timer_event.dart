@@ -22,21 +22,21 @@ class TimerStarted extends TimerEvent {
 }
 
 class TimerPaused extends TimerEvent {
-  const TimerPaused({required int duration});
+  // const TimerPaused({required int duration});
 }
 
 class TimerResumed extends TimerEvent {
-  const TimerResumed({required int duration});
+  // const TimerResumed({required int duration});
 }
 
 class TimerReset extends TimerEvent {
-  const TimerReset({required int duration});
+  // const TimerReset({required int duration});
 }
 
 class TimerTicked extends TimerEvent {
   const TimerTicked({required this.duration});
   final int duration;
+
   @override
-  // TODO: implement props
   List<Object> get props => [duration];
 }
