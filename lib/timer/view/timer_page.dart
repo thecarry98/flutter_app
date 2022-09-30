@@ -97,7 +97,7 @@ class Actions extends StatelessWidget {
             FloatingActionButton(
                 child: Icon(Icons.replay),
                 onPressed: () => context.read<TimerCubit>().onReset()
-                // .add(TimerReset(duration: state.duration)),
+                // .add(TimerReset(duration: state.duration))
                 ),
           ],
           if (state is TimerRunComplete) ...[

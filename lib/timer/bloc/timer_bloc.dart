@@ -18,6 +18,8 @@ class TimerBloc extends Bloc<TimerEvent, TimerState> {
     on<TimerTicked>(
         _onTicked); //  duration > 0  ? emit TimerRunInProgress : TimerRunPaused
   }
+  // @override
+  // TimerState get initialSta=> TimerInitial(_duration);{} 
 
   final Ticker _ticker;
   static const int _duration = 60;
@@ -33,6 +35,7 @@ class TimerBloc extends Bloc<TimerEvent, TimerState> {
         .listen((duration) => add(TimerTicked(duration: duration)));
   }
 
+  
   void _onPaused(TimerPaused event, Emitter<TimerState> emit) {
     if (state is TimerRunInProgress) {
       _tickerSubscription?.pause();

@@ -21,6 +21,10 @@ class TimerStarted extends TimerEvent {
   final int duration;
 }
 
+class InitEvent extends TimerEvent {
+  //entity
+}
+
 class TimerPaused extends TimerEvent {
   // const TimerPaused({required int duration});
 }

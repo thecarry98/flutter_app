@@ -13,6 +13,7 @@ class TimerCubit extends Cubit<TimerState> {
   static const int _duration = 60;
   StreamSubscription<int>? _tickerSubscription;
 
+  // _initState() {}
   Future<void> onStarted() async {
     emit(TimerRunInProgress(state.duration));
     _tickerSubscription?.cancel();
