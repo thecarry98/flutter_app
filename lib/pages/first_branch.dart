@@ -2,18 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import 'first_branch.dart';
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class FirstBranch extends StatelessWidget {
+  const FirstBranch({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        FirstBranch(),
-        // SecondBranch(),
-      ],
+    return Container(
+      child: Center(
+        child: Text('First Branch'),
+      ),
     );
   }
 }
